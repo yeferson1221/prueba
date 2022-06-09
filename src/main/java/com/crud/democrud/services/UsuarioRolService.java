@@ -25,9 +25,6 @@ public class UsuarioRolService {
     }
 
 
-    public ArrayList<UsuarioRol>  obtenerPorPrioridad(Integer prioridad) {
-        return usuarioRolRepository.findByPrioridad(prioridad);
-    }
 
     public boolean eliminarUsuarioRol(Long id) {
         try{

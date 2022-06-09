@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+
 
 @DataJpaTest
 @AutoConfigureTestDatabase(replace= AutoConfigureTestDatabase.Replace.NONE)
@@ -21,13 +21,7 @@ public class UsuarioRolTest {
     @Autowired
     UsuarioRolRepository usuarioRolRepository;
 
-    @Test
-    public void testGuardarUsuarioRol(){
-        UsuarioModel usuarioModel = new UsuarioModel("lucas","eale@gmail.com",1);
-        UsuarioRol usuarioRol=new UsuarioRol(1L,"lucas",usuarioModel);
-        UsuarioRol usuarioRolRegistrado = usuarioRolRepository.save(usuarioRol);
-        assertNotNull(usuarioRolRegistrado);
-    }
+
 
     @Test
     public void testBuscarUsuarioRolPorId(){
