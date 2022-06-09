@@ -24,7 +24,7 @@ public class UsuarioRolController {
             return this.usuarioRolService.guardarUsuarioRol(role);
         }
         @GetMapping(path = "/{id}")
-        public Optional<UsuarioRol> obtenerUsuarioPorId(@PathVariable("id") Long id) {
+        public Optional<UsuarioRol> obtenerUsuarioRolPorId(@PathVariable("id") Long id) {
             return this.usuarioRolService.obtenerPorId(id);
         }
 
