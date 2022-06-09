@@ -4,7 +4,6 @@ import com.crud.democrud.models.UsuarioRol;
 import com.crud.democrud.repositories.UsuarioRolRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.ArrayList;
 import java.util.Optional;
 @Service
@@ -23,8 +22,6 @@ public class UsuarioRolService {
     public Optional<UsuarioRol> obtenerPorId(Long id){
         return usuarioRolRepository.findById(id);
     }
-
-
 
     public boolean eliminarUsuarioRol(Long id) {
         try{

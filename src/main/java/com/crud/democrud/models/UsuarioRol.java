@@ -18,16 +18,10 @@ public class UsuarioRol {
     @Setter
     private String name;
 
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "rol_usuario_id", nullable = false)
-    @Getter
-    @Setter
-    private UsuarioModel rolUser;
 
-    public UsuarioRol(Long id, String name, UsuarioModel rolUser) {
+    public UsuarioRol(Long id, String name) {
         this.id = id;
         this.name = name;
-        this.rolUser = rolUser;
     }
 
     public UsuarioRol(){
@@ -35,7 +29,6 @@ public class UsuarioRol {
     }
 
     public UsuarioRol(String name) {
-        super();
         this.name = name;
     }
 }

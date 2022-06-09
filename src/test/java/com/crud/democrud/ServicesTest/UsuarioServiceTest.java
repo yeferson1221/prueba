@@ -20,12 +20,7 @@ public class UsuarioServiceTest {
     @Autowired
     UsuarioRepository usuarioRepository;
 
-    @Test
-    public void testGuardarUsuario(){
-        UsuarioModel usuarioModel=new UsuarioModel("aquaman","aqua@gmail.com",99);
-        UsuarioModel usuarioModelRegistrado = usuarioRepository.save(usuarioModel);
-        assertNotNull(usuarioModelRegistrado);
-    }
+
 
     @Test
     public void testBuscarUsuarioPorId(){
